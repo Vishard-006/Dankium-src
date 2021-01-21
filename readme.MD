@@ -5,5 +5,8 @@
 1. Python (version >= 3.5)
 2. Chrome or Firefox Webdriver ( [Chrome Driver](https://chromedriver.chromium.org/downloads) , [Firefox Driver](https://github.com/mozilla/geckodriver/releases) )
 3. Selenium Python Library (Install with `pip install selenium`)
+>To Make it Work
+* Replace "Your Url here" in dankmemer.py to your actual discord server's channel's url 
+
 
 
