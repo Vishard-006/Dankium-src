@@ -14,6 +14,8 @@ if (url.startswith("https://discord.com/"))  :
     password.send_keys(uPwd)
     login_button = driver.find_element_by_xpath('//*[@id="app-mount"]/div[2]/div/div[2]/div/div/form/div/div/div[1]/div[3]/button[2]')
     login_button.click()
+    a = driver.find_elements_by_xpath('//*[@id="app-mount"]/div[2]/div/div[2]/div/div/div/div/div[2]/div/main/form/div[1]/div/div/div/div[3]/div[2]')
+    a.send_keys("hello")
     
 
 else  :
