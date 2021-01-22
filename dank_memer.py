@@ -7,7 +7,7 @@ url = input("Enter Server Channel Url")
 if (url.startswith("https://discord.com/"))  :
     browser = webdriver.Chrome(executable_path='C:/Chrome-Web-Driver/chromedriver.exe')
     browser.get(url)
-
+    print("THANKS")
 
 else  :
     print ("URL invalid")
