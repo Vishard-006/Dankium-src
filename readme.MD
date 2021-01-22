@@ -8,6 +8,8 @@
 >To Make it Work
 * Enter correct discord username,password when prompted
 * Next enter your discord server's dank memer channel's URL when prompted
+* Now Selenium will open Browser and do the rest
+
 
 
 
