@@ -6,7 +6,10 @@
 2. Chrome or Firefox Webdriver ( [Chrome Driver](https://chromedriver.chromium.org/downloads) , [Firefox Driver](https://github.com/mozilla/geckodriver/releases) )
 3. Selenium Python Library (Install with `pip install selenium`)
 >To Make it Work
-* Replace "Your Url here" (line 6) in dankmemer.py to your actual discord server's channel's url 
+* Enter correct discord username,password when prompted
+* Next enter your discord server's dank memer channel's URL when prompted
+* Now Selenium will open Browser and do the rest
+
 
 
 
