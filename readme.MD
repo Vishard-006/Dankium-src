@@ -4,10 +4,8 @@
 >Requirements :
 1. Python (version >= 3.5)
 2. Chrome or Firefox Webdriver ( [Chrome Driver](https://chromedriver.chromium.org/downloads) , [Firefox Driver](https://github.com/mozilla/geckodriver/releases) )
->To Make it Work
-* Run `pip install -r requirements.txt`
-* Enter correct discord username,password when prompted
-* Next enter your discord server's dank memer channel's URL when prompted
+3. Be Sure to run `pip install -r requirements.txt` to get all dependencies
+
 
 
 
