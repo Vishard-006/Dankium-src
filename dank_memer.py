@@ -3,19 +3,16 @@ from selenium.webdriver.common.keys import Keys
 import getpass
 import time
 import random
-import csv
-from pathlib import Path
 
 
-my_file = Path("./usr.csv")
-if my_file.is_file() :
-    Uname = 
+
+
 uName = input("Enter Discord Username / Email :")
 uPwd = getpass.getpass("Enter PWD :")
 url = input("Enter Server Channel Url:")
 
 if (url.startswith("https://discord.com/"))  :
-    driver = webdriver.Chrome(executable_path='C:\Chrome-Web-Driver\chromedriver.exe')
+    driver = webdriver.Chrome(executable_path=r'C:\Chrome-Web-Driver\chromedriver.exe')
     driver.get(url)
     email = driver.find_element_by_name('email')
     email.send_keys(uName)
@@ -52,16 +49,12 @@ if (url.startswith("https://discord.com/"))  :
         msg.send_keys("pls dep all")
         msg.send_keys(Keys.RETURN)
         time.sleep(5)
-        my_file = Path("/path/to/file")
-        msg.send_keys("pls search")
-        search = driver.find_element_by_xpath('//*[@id="chat-messages-802145332174520381"]/div[1]/div').text
-        msg.send_keys(search)
-        msg.send_keys(Keys.RETURN)
         time.sleep(5)
 
 else  :
     print ("URL invalid")
  
-
+#TODO  pls search
+#TODO  data from csv 
 
 
