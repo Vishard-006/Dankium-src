@@ -5,19 +5,24 @@ import time
 import random
 import os.path
 import json
-#if os.path.isfile("./usr.json") :
-   # y = input("Load saved Login ? y/n ?") 
-    #if y=='y' :
-      # f = open("./usr.json")
-       # data = json.load(f)
+if os.path.isfile("./usr.json") :
+    y = input("Load saved Login ? y/n ?") 
+    if y=='y' :
+        f = open("./usr.json")
+        data = json.load(f)
+        uName = data["Name"]
+        uPwd = data["PWD"]
+        url = data["url"]
+    else :
+        uName = input("Enter Discord Username / Email :")
+        uPwd = getpass.getpass("Enter PWD :")
+        url = input("Enter Server Channel Url:")
 
 
 
 
 
-uName = input("Enter Discord Username / Email :")
-uPwd = getpass.getpass("Enter PWD :")
-url = input("Enter Server Channel Url:")
+
 
 if (url.startswith("https://discord.com/"))  :
     driver = webdriver.Chrome(executable_path=r'C:\Chrome-Web-Driver\chromedriver.exe')
@@ -37,28 +42,28 @@ if (url.startswith("https://discord.com/"))  :
     while True :
         msg.send_keys("pls beg")
         msg.send_keys(Keys.RETURN)
-        time.sleep(8)
+        time.sleep(7)
         msg.send_keys("pls dep all")
         msg.send_keys(Keys.RETURN)
-        time.sleep(8)
+        time.sleep(7)
         msg.send_keys("pls hunt")
         msg.send_keys(Keys.RETURN)
-        time.sleep(8)
+        time.sleep(7)
         msg.send_keys("pls fish")
         msg.send_keys(Keys.RETURN)
-        time.sleep(8)
+        time.sleep(7)
         memes = ['f' , 'r' , 'i' , 'c' , 'k']
         pm = random.choice(memes)
         msg.send_keys("pls pm")
         msg.send_keys(Keys.RETURN)
-        time.sleep(8)
+        time.sleep(7)
         msg.send_keys(pm)
         msg.send_keys(Keys.RETURN)
-        time.sleep(8)
+        time.sleep(7)
         msg.send_keys("pls dep all")
         msg.send_keys(Keys.RETURN)
-        time.sleep(8)
-        time.sleep(8)
+        time.sleep(7)
+        time.sleep(12)
 
 else  :
     print ("URL invalid")
