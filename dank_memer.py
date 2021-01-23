@@ -32,7 +32,7 @@ if (url.startswith("https://discord.com/"))  :
     time.sleep(10)
     msg = driver.find_element_by_xpath('//*[@id="app-mount"]/div[2]/div/div[2]/div/div/div/div/div[2]/div/main/form/div[1]/div/div/div/div[1]/div[2]/div')
     print ("This program will run on an infinite loop . Press CTRL+C anytime to stop")
-    msg.click()
+    
     
     while True :
         msg.send_keys("pls beg")
