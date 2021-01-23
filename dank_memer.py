@@ -3,7 +3,11 @@ from selenium.webdriver.common.keys import Keys
 import getpass
 import time
 import random
-
+import os.path
+if os.path.isfile("./usr.json") :
+    y = input("Load saved Login ? y/n ?") 
+    if y=='y' :
+        
 
 
 
