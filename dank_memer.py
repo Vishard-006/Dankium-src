@@ -5,7 +5,7 @@ import time
 import random
 import os.path
 import json
-import test 
+
 if os.path.isfile("./usr.json") :
     y = input("Load saved Login ? y/n ?") 
     if y=='y' :
