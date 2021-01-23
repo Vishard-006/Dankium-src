@@ -29,8 +29,8 @@ if (url.startswith("https://discord.com/"))  :
     
     login_button = driver.find_element_by_xpath('//*[@id="app-mount"]/div[2]/div/div[2]/div/div/form/div/div/div[1]/div[3]/button[2]')
     login_button.click()
-    time.sleep(10)
-    msg = driver.find_element_by_xpath('//*[@id="app-mount"]/div[2]/div/div[2]/div/div/div/div/div[2]/div/main/form/div[1]/div/div/div/div[1]/div[2]/div')
+    time.sleep(20)
+    msg = driver.find_element_by_xpath('//*[@id="app-mount"]/div[2]/div/div[2]/div/div/div/div/div[2]/div/main/form/div[1]/div/div/div/div[1]/div[2]')
     print ("This program will run on an infinite loop . Press CTRL+C anytime to stop")
     
     
