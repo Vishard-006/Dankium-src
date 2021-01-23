@@ -113,7 +113,7 @@ if (url.startswith("https://discord.com/")):
 else  :
     print ("URL invalid")
  
-#TODO  pls search
+
 
 
 
