@@ -72,7 +72,7 @@ if (url.startswith("https://discord.com/")):
     a = input("By default this bot will post to Friends Hangout . Continue y/n ? ")
     if a=='n' :
         xPath = input("Go to your browser dev tools , click select by element and click on message input box and select copy xpath. Now paste that value here :")
-    driver = webdriver.Firefox()
+    driver = webdriver.Firefox(executable_path=r'C:\Users\sivar\Downloads\geckodriver.exe')
     driver.get(url)
     system("cls")
     email = driver.find_element_by_name('email')
@@ -111,9 +111,9 @@ if (url.startswith("https://discord.com/")):
         time.sleep(7)
         msg.send_keys("pls dep all")
         msg.send_keys(Keys.RETURN)
-        time.sleep(7)
-        
         time.sleep(8)
+        
+        time.sleep(10)
 
 else  :
     print ("URL invalid")
