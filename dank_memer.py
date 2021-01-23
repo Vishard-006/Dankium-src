@@ -6,6 +6,8 @@ import random
 import os.path
 import json
 
+
+
 if os.path.isfile("./usr.json") :
     y = input("Load saved Login ? y/n ?") 
     if y=='y' :
@@ -38,8 +40,6 @@ else :
             uPwd = getpass.getpass("Enter PWD :")
             url = input("Enter Server Channel Url:"
 """
-
-
 
 
 
