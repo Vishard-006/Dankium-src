@@ -9,7 +9,7 @@ if os.path.isfile("./usr.json") :
     y = input("Load saved Login ? y/n ?") 
     if y=='y' :
         f = open("./usr.json")
-        data = json.load(f)
+        data = json.loads(f.read())
         uName = data["Name"]
         uPwd = data["PWD"]
         url = data["url"]
@@ -17,6 +17,26 @@ if os.path.isfile("./usr.json") :
         uName = input("Enter Discord Username / Email :")
         uPwd = getpass.getpass("Enter PWD :")
         url = input("Enter Server Channel Url:")
+"""
+else :
+    x = input("want to save login credentials ? y/n ?")
+    if x=='y' :
+        f = open("usr.json", "a+")
+        f.write("{")
+        f.wri
+        uName = input("Enter Discord Username / Email :")
+        uPwd = getpass.getpass("Enter PWD :")
+        url = input("Enter Server Channel Url:")
+        
+        data = json.loads(f.read())
+        data["Name"] = uName
+        data["PWD"] = uPwd
+        data["url"] = url
+    else :
+            uName = input("Enter Discord Username / Email :")
+            uPwd = getpass.getpass("Enter PWD :")
+            url = input("Enter Server Channel Url:"
+"""
 
 
 
