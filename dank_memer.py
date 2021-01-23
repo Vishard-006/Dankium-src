@@ -72,7 +72,7 @@ if (url.startswith("https://discord.com/")):
     a = input("By default this bot will post to Friends Hangout . Continue y/n ? ")
     if a=='n' :
         xPath = input("Go to your browser dev tools , click select by element and click on message input box and select copy xpath. Now paste that value here :")
-    driver = webdriver.Chrome(executable_path=r'C:\Chrome-Web-Driver\chromedriver.exe')
+    driver = webdriver.Firefox()
     driver.get(url)
     system("cls")
     email = driver.find_element_by_name('email')
