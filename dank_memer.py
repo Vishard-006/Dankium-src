@@ -108,6 +108,7 @@ if (url.startswith("https://discord.com/")):
         msg.send_keys("pls dep all")
         msg.send_keys(Keys.RETURN)
         time.sleep(6)
+        
         time.sleep(6)
 
 else  :
