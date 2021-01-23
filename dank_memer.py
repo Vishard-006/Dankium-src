@@ -4,10 +4,14 @@ import getpass
 import time
 import random
 import os.path
-if os.path.isfile("./usr.json") :
-    y = input("Load saved Login ? y/n ?") 
-    if y=='y' :
-        
+import json
+#if os.path.isfile("./usr.json") :
+   # y = input("Load saved Login ? y/n ?") 
+    #if y=='y' :
+      # f = open("./usr.json")
+       # data = json.load(f)
+
+
 
 
 
@@ -26,8 +30,9 @@ if (url.startswith("https://discord.com/"))  :
     login_button = driver.find_element_by_xpath('//*[@id="app-mount"]/div[2]/div/div[2]/div/div/form/div/div/div[1]/div[3]/button[2]')
     login_button.click()
     time.sleep(10)
-    msg = driver.find_element_by_xpath('//*[@id="app-mount"]/div[2]/div/div[2]/div/div/div/div/div[2]/div/main/form/div[1]/div/div/div/div[3]/div[2]')
+    msg = driver.find_element_by_xpath('//*[@id="app-mount"]/div[2]/div/div[2]/div/div/div/div/div[2]/div/main/form/div[1]/div/div/div/div[1]/div[2]/div')
     print ("This program will run on an infinite loop . Press CTRL+C anytime to stop")
+    msg.click()
     
     while True :
         msg.send_keys("pls beg")
