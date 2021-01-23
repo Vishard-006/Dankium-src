@@ -114,6 +114,6 @@ else  :
     print ("URL invalid")
  
 #TODO  pls search
-#TODO  data from csv 
+
 
 
