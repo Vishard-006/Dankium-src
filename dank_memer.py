@@ -17,17 +17,22 @@ if os.path.isfile("./data.json") :
         uName = data["Name"]
         uPwd = data["PWD"]
         url = data["url"]
+        brw = data["brw"]
+        driPath = data["driPath"]
     else :
         uName = input("Enter Discord Username / Email :")
         uPwd = getpass.getpass("Enter PWD :")
         url = input("Enter Server Channel Url:")
-
+        brw = input("Chrome (c) or Firefox (f) ?")
+        driPath = input("Path for webdriver:")
 else :
     x = input("want to save login credentials (credentials will be stored at ./data.json) ? y/n ?")
     if x=='y' :     
             uName = input("Enter Discord Username / Email :")
             uPwd = getpass.getpass("Enter PWD :")
             url = input("Enter Server Channel Url:")
+            brw = input("Chrome (c) or Firefox (f) ?")
+            driPath = input("Path for webdriver:")
             f = open("usr.json", "a+")
             f.write("{")
             f.write("\n")
@@ -41,8 +46,15 @@ else :
             f.write("\n")
             f.write('"url"')
             f.write(" : ")
-            f.write('"z"')
+            f.write('"z" ,')
             f.write("\n")
+            f.write('"brw"')
+            f.write(" : ")
+            f.write('"v" ,')
+            f.write("\n")
+            f.write('"driPath"')
+            f.write(" : ")
+            f.write('"d" ')
             f.write("}")
            
             f = open("./usr.json" , "a+")
@@ -50,6 +62,8 @@ else :
             data["Name"] = uName
             data["PWD"] = uPwd
             data["url"] = url
+            data["brw"] = brw
+            data["driPath"] = driPath
             
             f.close()
             os.remove("./usr.json")
@@ -60,6 +74,8 @@ else :
          uName = input("Enter Discord Username / Email :")
          uPwd = getpass.getpass("Enter PWD :")
          url = input("Enter Server Channel Url:")
+         brw = input("Chrome (c) or Firefox (f)")
+         driPath = input("Path for webdriver:")
 
 
 
@@ -72,8 +88,11 @@ if (url.startswith("https://discord.com/")):
     a = input("By default this bot will post to Friends Hangout . Continue y/n ? ")
     if a=='n' :
         xPath = input("Go to your browser dev tools , click select by element and click on message input box and select copy xpath. Now paste that value here :")
-    driver = webdriver.Firefox(executable_path=r'C:\Users\sivar\Downloads\geckodriver.exe')
-    driver.get(url)
+    if brw=='c' :
+        driver = webdriver.Chrome(driPath)
+    elif brw=="f" :
+        driver = webdriver.Firefox(driPath)
+    driver.get(url) 
     system("cls")
     email = driver.find_element_by_name('email')
     email.send_keys(uName)
@@ -82,7 +101,7 @@ if (url.startswith("https://discord.com/")):
     
     login_button = driver.find_element_by_xpath('//*[@id="app-mount"]/div[2]/div/div[2]/div/div/form/div/div/div[1]/div[3]/button[2]')
     login_button.click()
-    time.sleep(10)
+    time.sleep(30)
     msg = driver.find_element_by_xpath(xPath)
     system("cls")
     print ("Logged in Succesfully . If you have chosen for credentials to be saved , it will save after you press CTRL+C . This program will run on an infinite loop . Press CTRL+C anytime to stop")
