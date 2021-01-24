@@ -45,7 +45,7 @@ else :
             data["PWD"] = uPwd
             data["url"] = url
             data["brw"] = brw
-            data["driPath"] = driPath
+            
             d = open("data.json" , "a+")
             json.dump(data, d)
             d.close()
