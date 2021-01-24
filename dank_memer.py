@@ -65,13 +65,12 @@ else :
 if (url.startswith("https://discord.com/")):
     system("cls")
     xPath ='//*[@id="app-mount"]/div[2]/div/div[2]/div/div/div/div/div[2]/div/main/form/div[1]/div/div/div/div[1]/div[2]'
-    a = input("By default this bot will post to Friends Hangout . Continue y/n ? ")
-    if a=='n' :
-        xPath = input("Go to your browser dev tools , click select by element and click on message input box and select copy xpath. Now paste that value here :")
+   
+    
     if brw=='c' :
         driver = webdriver.Chrome("./chromedriver.exe")
     elif brw=="f" :
-        driver = webdriver.Firefox("./geckodriver.exe")
+        driver = webdriver.Firefox(executable_path="./geckodriver.exe")
     driver.get(url) 
     system("cls")
     email = driver.find_element_by_name('email')
@@ -84,7 +83,7 @@ if (url.startswith("https://discord.com/")):
     time.sleep(10)
     msg = driver.find_element_by_xpath(xPath)
     system("cls")
-    print ("Logged in Succesfully . If you have chosen for credentials to be saved , it will save after you press CTRL+C . This program will run on an infinite loop . Press CTRL+C anytime to stop")
+    print ("Logged in Succesfully .This program will run on an infinite loop . Press CTRL+C anytime to stop")
     
     
     while True :
