@@ -83,7 +83,7 @@ if (url.startswith("https://discord.com/")):
     time.sleep(10)
     msg = driver.find_element_by_xpath(xPath)
     system("cls")
-    print ("Logged in Succesfully .This program will run on an infinite loop . Press CTRL+C anytime to stop")
+    print ("Logged in Succesfully . This program will run on an infinite loop . Press CTRL+C anytime to stop")
     
     
     while True :
