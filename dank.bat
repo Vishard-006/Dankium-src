@@ -1,5 +1,11 @@
 @ECHO OFF 
+if exist ./data.json (
+    rem test
+) else (
+    pip install -r requirements.txt
+    
+)
 cls
-pip install -r requirements.txt
+
 cls
 python dank_memer.py
