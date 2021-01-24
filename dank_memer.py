@@ -18,13 +18,13 @@ if os.path.isfile("./data.json") :
         uPwd = data["PWD"]
         url = data["url"]
         brw = data["brw"]
-        driPath = data["driPath"]
+        
     else :
         uName = input("Enter Discord Username / Email :")
         uPwd = getpass.getpass("Enter PWD :")
         url = input("Enter Server Channel Url:")
         brw = input("Chrome (c) or Firefox (f) ?")
-        driPath = input("Path for webdriver:")
+        
 else :
     x = input("want to save login credentials (credentials will be stored at ./data.json) ? y/n ?")
     if x=='y' :     
@@ -32,13 +32,13 @@ else :
             uPwd = getpass.getpass("Enter PWD :")
             url = input("Enter Server Channel Url:")
             brw = input("Chrome (c) or Firefox (f) ?")
-            driPath = input("Path for webdriver:")
+            
             data = {
                 "Name" : "x",
                 "PWD" : "y",
                 "url" : "z",
-                "brw" : "v",
-                "driPath" : "d"
+                "brw" : "v"
+                
             }
             
             data["Name"] = uName
@@ -69,9 +69,9 @@ if (url.startswith("https://discord.com/")):
     if a=='n' :
         xPath = input("Go to your browser dev tools , click select by element and click on message input box and select copy xpath. Now paste that value here :")
     if brw=='c' :
-        driver = webdriver.Chrome(driPath)
+        driver = webdriver.Chrome("./chromedriver.exe")
     elif brw=="f" :
-        driver = webdriver.Firefox(driPath)
+        driver = webdriver.Firefox("./geckodriver.exe")
     driver.get(url) 
     system("cls")
     email = driver.find_element_by_name('email')
