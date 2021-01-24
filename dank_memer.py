@@ -68,9 +68,9 @@ if (url.startswith("https://discord.com/")):
    
     
     if brw=='c' :
-        driver = webdriver.Chrome("./chromedriver.exe")
+        driver = webdriver.Chrome(executable_path=r"./chromedriver.exe")
     elif brw=="f" :
-        driver = webdriver.Firefox(executable_path="./geckodriver.exe")
+        driver = webdriver.Firefox(executable_path=r"./geckodriver.exe")
     driver.get(url) 
     system("cls")
     email = driver.find_element_by_name('email')
