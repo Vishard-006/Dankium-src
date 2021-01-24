@@ -33,48 +33,28 @@ else :
             url = input("Enter Server Channel Url:")
             brw = input("Chrome (c) or Firefox (f) ?")
             driPath = input("Path for webdriver:")
-            f = open("usr.json", "a+")
-            f.write("{")
-            f.write("\n")
-            f.write('"Name"')
-            f.write(" : ")
-            f.write('"x" ,')
-            f.write("\n")
-            f.write('"PWD"')
-            f.write(" : ")
-            f.write('"y" ,')
-            f.write("\n")
-            f.write('"url"')
-            f.write(" : ")
-            f.write('"z" ,')
-            f.write("\n")
-            f.write('"brw"')
-            f.write(" : ")
-            f.write('"v" ,')
-            f.write("\n")
-            f.write('"driPath"')
-            f.write(" : ")
-            f.write('"d" ')
-            f.write("}")
-           
-            f = open("./usr.json" , "a+")
-            data = json.loads(f.read())
+            data = {
+                "Name" : "x",
+                "PWD" : "y",
+                "url" : "z",
+                "brw" : "v",
+                "driPath" : "d"
+            }
+            
             data["Name"] = uName
             data["PWD"] = uPwd
             data["url"] = url
             data["brw"] = brw
             data["driPath"] = driPath
-            
-            f.close()
-            os.remove("./usr.json")
             d = open("data.json" , "a+")
             json.dump(data, d)
+            d.close()
             
     else :
          uName = input("Enter Discord Username / Email :")
          uPwd = getpass.getpass("Enter PWD :")
          url = input("Enter Server Channel Url:")
-         brw = input("Chrome (c) or Firefox (f)")
+         brw = input("Chrome (c) or Firefox (f) ?")
          driPath = input("Path for webdriver:")
 
 
@@ -101,7 +81,7 @@ if (url.startswith("https://discord.com/")):
     
     login_button = driver.find_element_by_xpath('//*[@id="app-mount"]/div[2]/div/div[2]/div/div/form/div/div/div[1]/div[3]/button[2]')
     login_button.click()
-    time.sleep(30)
+    time.sleep(10)
     msg = driver.find_element_by_xpath(xPath)
     system("cls")
     print ("Logged in Succesfully . If you have chosen for credentials to be saved , it will save after you press CTRL+C . This program will run on an infinite loop . Press CTRL+C anytime to stop")
