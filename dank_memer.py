@@ -54,7 +54,7 @@ else :
          uPwd = getpass.getpass("Enter PWD :")
          url = input("Enter Server Channel Url:")
          brw = input("Chrome (c) or Firefox (f) ?")
-         driPath = input("Path for webdriver:")
+         
 
 
 
