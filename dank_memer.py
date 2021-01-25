@@ -7,7 +7,6 @@ import os.path
 from os import system, name
 import json
 
-system("cls")
 
 if os.path.isfile("./data.json") :
     y = input("Load saved Login ? y/n ?") 
@@ -64,7 +63,7 @@ else :
 
 if (url.startswith("https://discord.com/")):
     system("cls")
-    xPath ='//*[@id="app-mount"]/div[2]/div/div[2]/div/div/div/div/div[2]/div/main/form/div[1]/div/div/div/div[1]/div[2]'
+    claPath ='markup-2BOw-j slateTextArea-1Mkdgw fontSize16Padding-3Wk7zP'
    
     
     if brw=='c' :
@@ -80,8 +79,8 @@ if (url.startswith("https://discord.com/")):
     
     login_button = driver.find_element_by_xpath('//*[@id="app-mount"]/div[2]/div/div[2]/div/div/form/div/div/div[1]/div[3]/button[2]')
     login_button.click()
-    time.sleep(40)
-    msg = driver.find_element_by_xpath(xPath)
+    driver.implicitly_wait(60)
+    msg = driver.find_element_by_css_selector(".markup-2BOw-j.slateTextArea-1Mkdgw.fontSize16Padding-3Wk7zP")
     system("cls")
     print ("Logged in Succesfully . This program will run on an infinite loop . Press CTRL+C anytime to stop")
     
@@ -120,4 +119,3 @@ else  :
 
 
 
-##
