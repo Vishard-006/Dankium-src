@@ -62,10 +62,7 @@ else :
 
 
 if (url.startswith("https://discord.com/")):
-    system("cls")
-    claPath ='markup-2BOw-j slateTextArea-1Mkdgw fontSize16Padding-3Wk7zP'
-   
-    
+    system("cls")  
     if brw=='c' :
         driver = webdriver.Chrome(executable_path=r"./chromedriver.exe")
     elif brw=="f" :
