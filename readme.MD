@@ -3,7 +3,7 @@
 
 >Installation :
 1. [Download Dankium](https://codeload.github.com/Vishard-006/Dankium/zip/main)
-2. Run ./dankium_exec/dank_memer/dankium.exe
+2. Run ./dankium_exec/dank_memer/dank_memer.exe
 
 
 
