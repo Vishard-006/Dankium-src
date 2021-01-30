@@ -2,7 +2,7 @@
 * Uses Selenium to Automate commands like pls beg, pls search , pls work etc .
 
 >Installation :
-1. [Download Dankium](https://codeload.github.com/Vishard-006/Dankium/zip/main)
+1. [Download Dankium](https://drive.google.com/file/d/1tH5A13qSzBmGQIpEHhDr5eKjeLXWWQ-l/view?usp=sharing)
 2. Execute dank_memer.exe
 
 
