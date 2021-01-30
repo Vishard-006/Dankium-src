@@ -11,7 +11,10 @@ import json
 if os.path.isfile("./data.json") :
     y = input("Load saved Login ? y/n ?") 
     if y=='y' :
-        f = open("./data.json")
+        try :
+            f = open("./data.json")
+        except :
+            print("run as admin . ")
         data = json.loads(f.read())
         uName = data["Name"]
         uPwd = data["PWD"]
@@ -44,10 +47,12 @@ else :
             data["PWD"] = uPwd
             data["url"] = url
             data["brw"] = brw
-            
-            d = open("data.json" , "a+")
-            json.dump(data, d)
-            d.close()
+            try :
+                with open('data.json', "a+") as d:
+                    json.dump(data, d)
+                    d.close()
+            except :
+                print("Dont have perms")
             
     else :
          uName = input("Enter Discord Username / Email :")
@@ -73,45 +78,48 @@ if (url.startswith("https://discord.com/")):
     email.send_keys(uName)
     password = driver.find_element_by_name('password')
     password.send_keys(uPwd)
-    
-    login_button = driver.find_element_by_xpath('//*[@id="app-mount"]/div[2]/div/div[2]/div/div/form/div/div/div[1]/div[3]/button[2]')
-    login_button.click()
-    driver.implicitly_wait(60)
-    msg = driver.find_element_by_css_selector(".markup-2BOw-j.slateTextArea-1Mkdgw.fontSize16Padding-3Wk7zP")
-    system("cls")
-    print ("Logged in Succesfully . This program will run on an infinite loop . Press CTRL+C anytime to stop")
-    
-    
-    while True :
-        msg.send_keys("pls beg")
-        msg.send_keys(Keys.RETURN)
-        time.sleep(7)
-        msg.send_keys("pls dep all")
-        msg.send_keys(Keys.RETURN)
-        time.sleep(7)
-        msg.send_keys("pls hunt")
-        msg.send_keys(Keys.RETURN)
-        time.sleep(7)
-        msg.send_keys("pls fish")
-        msg.send_keys(Keys.RETURN)
-        time.sleep(7)
-        memes = ['f' , 'r' , 'i' , 'c' , 'k']
-        pm = random.choice(memes)
-        msg.send_keys("pls pm")
-        msg.send_keys(Keys.RETURN)
-        time.sleep(7)
-        msg.send_keys(pm)
-        msg.send_keys(Keys.RETURN)
-        time.sleep(7)
-        msg.send_keys("pls dep all")
-        msg.send_keys(Keys.RETURN)
-        time.sleep(8)
+    try :
+        login_button = driver.find_element_by_xpath('//*[@id="app-mount"]/div[2]/div/div[2]/div/div/form/div/div/div[1]/div[3]/button[2]')
+        login_button.click()
+        driver.implicitly_wait(60)
+    except :
+        print("Login Unsuccesful . Please enter correct credentials")
+    else :
+        msg = driver.find_element_by_css_selector(".markup-2BOw-j.slateTextArea-1Mkdgw.fontSize16Padding-3Wk7zP")
+        system("cls")
+        print ("Logged in Succesfully . This program will run on an infinite loop . Press CTRL+C anytime to stop")
         
-        time.sleep(10)
+        
+        while True :
+            msg.send_keys("pls beg")
+            msg.send_keys(Keys.RETURN)
+            time.sleep(7)
+            msg.send_keys("pls dep all")
+            msg.send_keys(Keys.RETURN)
+            time.sleep(7)
+            msg.send_keys("pls hunt")
+            msg.send_keys(Keys.RETURN)
+            time.sleep(7)
+            msg.send_keys("pls fish")
+            msg.send_keys(Keys.RETURN)
+            time.sleep(7)
+            memes = ['f' , 'r' , 'i' , 'c' , 'k']
+            pm = random.choice(memes)
+            msg.send_keys("pls pm")
+            msg.send_keys(Keys.RETURN)
+            time.sleep(7)
+            msg.send_keys(pm)
+            msg.send_keys(Keys.RETURN)
+            time.sleep(7)
+            msg.send_keys("pls dep all")
+            msg.send_keys(Keys.RETURN)
+            time.sleep(8)
+            
+            time.sleep(10)
 
 else  :
     print ("URL invalid")
- 
+    
 
 
 
