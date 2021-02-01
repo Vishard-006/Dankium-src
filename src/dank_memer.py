@@ -7,7 +7,6 @@ import os.path
 from os import system, name
 import json
 
-
 if os.path.isfile("./data.json") :
     y = input("Load saved Login ? y/n ?") 
     if y=='y' :
