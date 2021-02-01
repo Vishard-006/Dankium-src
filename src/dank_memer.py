@@ -6,14 +6,6 @@ import random
 import os.path
 from os import system, name
 import json
-from tkinter import *
-window=Tk()
-# add widgets here
-
-window.title('Dankium')
-window.geometry("500x500")
-
-window.mainloop()
 
 if os.path.isfile("./data.json") :
     y = input("Load saved Login ? y/n ?") 
