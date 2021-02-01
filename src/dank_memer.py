@@ -6,7 +6,7 @@ import random
 import os.path
 from os import system, name
 import json
-
+import tkinter
 if os.path.isfile("./data.json") :
     y = input("Load saved Login ? y/n ?") 
     if y=='y' :
