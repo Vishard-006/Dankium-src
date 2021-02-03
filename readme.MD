@@ -3,9 +3,10 @@
 ### Purpose
 For automating dank memer commands and grinding coins
 ## Installation
-| Windows | [Dankium.exe](https://github.com/Vishard-006/Dankium/releases/download/v1.0/Dankium.exe) |
-|MacOS|  [Source Tarball](https://github.com/Vishard-006/Dankium/archive/v1.0.tar.gz)|
-| Linux | [Source Tarball](https://github.com/Vishard-006/Dankium/archive/v1.0.tar.gz) |
+| Operating System | File                                                                            |
+| Windows          | [Dankium.exe](https://github.com/Vishard-006/Dankium/releases/download/v1.0/Dankium.exe) |
+| MacOS            |  [Source Tarball](https://github.com/Vishard-006/Dankium/archive/v1.0.tar.gz)            |
+| Linux            | [Source Tarball](https://github.com/Vishard-006/Dankium/archive/v1.0.tar.gz)             |
 ## Compiling from Source
 
  
