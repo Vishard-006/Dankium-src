@@ -10,7 +10,7 @@ For automating dank memer commands and grinding coins
 
 | OS  | File |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
+| Windows  | [Dankium.exe](https://github.com/Vishard-006/Dankium/releases/download/v1.0/Dankium.exe)  |
 | Content Cell  | Content Cell  |
 ## Compiling from Source
 
