@@ -8,7 +8,7 @@ For automating dank memer commands and grinding coins
 | MacOS            |  [Source Tarball](https://github.com/Vishard-006/Dankium/archive/v1.0.tar.gz)            |
 | Linux            | [Source Tarball](https://github.com/Vishard-006/Dankium/archive/v1.0.tar.gz)             |
 
-| First Header  | Second Header |
+| OS  | File |
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
