@@ -5,7 +5,7 @@
 1. [Download Dankium](https://drive.google.com/file/d/1tH5A13qSzBmGQIpEHhDr5eKjeLXWWQ-l/view?usp=sharing)
 2. Execute The Setup File
 3. You are Done
-
+4. [Dankium assets](https://github.com/Vishard-006/Dankium/releases/tag/v1.0)
 
 
 
