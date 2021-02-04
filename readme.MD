@@ -25,7 +25,7 @@ For automating dank memer commands and grinding coins
 
 #### Note 
 For compiling from source an Installation of Python added to PATH is required
-    
+#### [Full List of executed Commands]
 
    
     
