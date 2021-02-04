@@ -15,7 +15,7 @@ For automating dank memer commands and grinding coins
 
  - Unzip the Tarball/Zip
  - Navigate to the unzipped tar in the terminal
-  `cd Downloads`
+  `cd Downloads\`
   
  - For Mac/Linux
   `python3 -m dank_memer.py`
