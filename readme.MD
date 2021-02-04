@@ -9,6 +9,7 @@ For automating dank memer commands and grinding coins
 | Windows  | [Dankium.exe](https://github.com/Vishard-006/Dankium/releases/download/v1.0/Dankium.exe)  |
 | MacOs  | [Source Tarball](https://github.com/Vishard-006/Dankium/archive/v1.0.tar.gz)  |
 | Linux  | [Source Tarball](https://github.com/Vishard-006/Dankium/archive/v1.0.tar.gz) |
+| Zip file | [Source Zip](https://github.com/Vishard-006/Dankium/archive/v1.0.zip) |
 ## Compiling from Source
 
  
