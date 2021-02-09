@@ -17,7 +17,7 @@ For automating dank memer commands and grinding coins
  - Unzip the Tarball/Zip
  - Navigate to the unzipped tar in the terminal
   `cd Downloads\Dankium-1.0\src\` \ `cd Downloads\Dankium-1.0\src\`
- - now run `pip install -r requirements.txt` for getting all dependencies
+ - Now run `pip install -r requirements.txt` for getting all dependencies (Need Python added to PATH and pip)
  - For Mac/Linux
   `python3 -m dank_memer.py`
   - For Windows
