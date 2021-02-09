@@ -31,7 +31,7 @@ For automating dank memer commands and grinding coins
 | 3. pls fish | Fishing Rod
 | 4. pls pm  | Laptop |
 ##### Income 
-- An Average of anywhere between 5k to 25k coins per hour is expected 
+- An Average of anywhere between 5k to 40k coins per hour is expected 
 > This totally depends on your luck !!
 #### Note 
 - For compiling from source an Installation of Python added to PATH is required
