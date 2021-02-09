@@ -23,10 +23,15 @@ For automating dank memer commands and grinding coins
   - For Windows
 ` python -m dank_memer.py`
 
-#### Note 
-For compiling from source an Installation of Python added to PATH is required
 #### Full List of executed Commands
-[List of Commands]
-
+| Command | Item to be Purchased from Dank memer shop |
+|---------|-------------------------------------------| 
+| 1. pls beg | - |
+| 2. pls hunt | Hunting Rifle |
+| 3. pls fish | Fishing Rod
+| 4. pls pm  | Laptop |
+#### Note 
+- For compiling from source an Installation of Python added to PATH is required
+- You must have purchased required things for each command before running the bot . Otherwise Bot will not work
    
     
