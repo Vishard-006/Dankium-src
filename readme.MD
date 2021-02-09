@@ -30,6 +30,9 @@ For automating dank memer commands and grinding coins
 | 2. pls hunt | Hunting Rifle |
 | 3. pls fish | Fishing Rod
 | 4. pls pm  | Laptop |
+##### Income 
+- An Average of anywhere between 5k to 25k coins per hour is expected 
+> This totally depends on your luck !!
 #### Note 
 - For compiling from source an Installation of Python added to PATH is required
 - You must have purchased required things for each command before running the bot . Otherwise Bot will not work
