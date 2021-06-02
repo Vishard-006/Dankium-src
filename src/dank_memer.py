@@ -6,16 +6,18 @@ import random
 import os.path
 from os import system, name
 import json
-import tkinter
+from webdriver_manager.chrome import ChromeDriverManager
+from webdriver_manager.firefox import GeckoDriverManager
+
 #added nothing
 
 #another watse comment
 #Line 12 branch test comment
-if os.path.isfile("./data.json") :
+if os.path.isfile("./src/data.json") :
     y = input("Load saved Login ? y/n ?") 
     if y=='y' :
         try :
-            f = open("./data.json")
+            f = open("./src/data.json")
         except :
             print("run as admin . ")
         data = json.loads(f.read())
@@ -51,7 +53,7 @@ else :
             data["url"] = url
             data["brw"] = brw
             try :
-                with open('data.json', "a+") as d:
+                with open('./src/data.json', "a+") as d:
                     json.dump(data, d)
                     d.close()
             except :
@@ -72,9 +74,9 @@ else :
 if (url.startswith("https://discord.com/")):
     system("cls")  
     if brw=='c' :
-        driver = webdriver.Chrome(executable_path=r"./chromedriver.exe")
+        driver = webdriver.Chrome(ChromeDriverManager().install())
     elif brw=="f" :
-        driver = webdriver.Firefox(executable_path=r"./geckodriver.exe")
+        driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
     driver.get(url) 
     system("cls")
     email = driver.find_element_by_name('email')
@@ -82,7 +84,7 @@ if (url.startswith("https://discord.com/")):
     password = driver.find_element_by_name('password')
     password.send_keys(uPwd)
     try :
-        login_button = driver.find_element_by_xpath('//*[@id="app-mount"]/div[2]/div/div[2]/div/div/form/div/div/div[1]/div[3]/button[2]')
+        login_button = driver.find_element_by_css_selector('.marginBottom8-AtZOdT.button-3k0cO7.button-38aScr.lookFilled-1Gx00P.colorBrand-3pXr91.sizeLarge-1vSeWK.fullWidth-1orjjo.grow-q77ONN')
         login_button.click()
         driver.implicitly_wait(60)
     except :
