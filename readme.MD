@@ -29,5 +29,4 @@ For automating dank memer commands and grinding coins
 #### Note 
 - For compiling from source an Installation of Python added to PATH is required
 - You must have purchased required things for each command before running the bot . Otherwise Bot will not work
-   
-    
+- This project was made for educational purposes and understanding selenium better . I am in no way responsible for any trouble that may be cause by using this tool , either for or  against you . Remember Dank Memer condemns people from using auto-typers and you may be banned for the same . Use the tool at your own risk .
