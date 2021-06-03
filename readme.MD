@@ -3,6 +3,17 @@
 ### Purpose
 For automating dank memer commands and grinding coins
 
+### How is this better than other auto-typers ? 
+- There are some other open-source autotypers available right eg https://github.com/iceteacandy/Dank-memer-discord-auto-typer or https://github.com/Swayx113/dank-memer-auto-typer ? Why should I use this script then ?
+- Those scripts are good too , but the advantage of using Dankium is that it does not use your system keyboard . This means that you are free to type using your system keyboard while running Dankium , something you cannot do with the other scripts . Dankium launches a browser session through selenium , and so all the typing happens only in the browser window , which leaves your system keyboard for you to use .
+- On the flip side , to be able to do this , Dankium needs to login to discord web , hence it requires you to type in your discord username and password . You will get a prompt to type in your username , password , server channel url and browser of choice (currently it supports chrome and firefox) .
+
+### Whats the `data.json` file ?
+- The first prompt you get after running the program is `Save login credentials ?` .  Where does it save them ?
+- If you hit y for the prompt , your credentials will be saved in `src/data.json `
+- but why does it need to save these credentials ?
+- Simple , it saves you the time of typing the credentials manually every time . Basically feature can be called as 'autologin' .
+
 ## Compiling from Source
 
  
